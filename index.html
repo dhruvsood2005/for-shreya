@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3ea">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Fifteen little letters for Shreya. For the days between being together.">
+  <title>For Shreya · A little closer</title>
+  <link rel="icon" href="./heart.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="draft-notice" id="draft-notice"><span>PRIVATE DRAFT</span> The letters are a starting point. Make them yours before sharing. <button id="notice-edit">Personalise ↗</button></div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="A little closer, home"><span class="brand-heart" aria-hidden="true">♡</span> a little closer<span class="wordmark-dot">.</span></a>
+    <nav aria-label="Main navigation"><a href="#letters">The letters <span>↗</span></a><button id="studio-toggle" aria-pressed="false">Personalise</button></nav>
+  </header>
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-rule"></span> 20 OCTOBER · JUST FOR YOU</p>
+        <h1 id="hero-title">For the days<br>I wish I could<br><em>be there.</em></h1>
+        <p class="hero-intro">Happy birthday, Shreya.</p>
+        <p class="hero-description">Until I can give you these words in person,<br class="desktop-break"> here’s a little place to find me.</p>
+        <a class="primary-link" href="#letters">Find your letter <span aria-hidden="true">↗</span></a>
+        <p class="handwritten hero-signature">All my love, Dhruv <span aria-hidden="true">♡</span></p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <span class="art-note handwritten">a little piece of me,<br>wherever you are.</span>
+        <div class="postcard postcard-back"><span>TOGETHER, EVEN FROM HERE</span><div class="postcard-heart">♡</div><span>some things don’t get smaller with distance.</span></div>
+        <div class="hero-envelope">
+          <div class="envelope-inside"></div><div class="hero-letter"><span class="letter-date">20 / 10</span><span class="letter-to handwritten">My Shreya,</span><i></i><i></i><i></i><span class="tiny-heart">♥</span></div>
+          <div class="envelope-front"></div><div class="envelope-address"><span>fifteen letters.</span><span>a thousand little ways to say it.</span></div><span class="wax-seal">♡</span>
+        </div>
+        <span class="postmark">SENT WITH LOVE<br><b>20 OCT</b><br>NO DISTANCE TOO FAR</span>
+        <span class="art-caption">No particular order. No expiry date.</span>
+        <svg class="drawn-arrow" width="103" height="74" viewBox="0 0 103 74"><path d="M5 7C27 6 51 9 58 25S43 65 31 51 59 32 94 51M84 39L95 52 78 57" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+    </section>
+    <section class="small-instructions" aria-label="How to use your letters"><span class="tiny-heart">♥</span><p>Some are for today. Some are for a day you haven’t had yet.<br><strong>Open whichever one feels like you right now.</strong></p><span class="instruction-count">15 LETTERS<br><span>always here for you</span></span></section>
+    <section class="studio-panel" id="studio-panel" hidden aria-labelledby="studio-title">
+      <div><p class="eyebrow">YOUR WRITING DESK</p><h2 id="studio-title">Make these sound like you.</h2><p>Open a letter, choose “Edit this letter”, and add your own words. Edits save <strong>only in this browser</strong>. Download your edits and send the file back here so I can publish them to the shared Site.</p><p class="studio-media-note">For photos, videos and voice notes: upload them in our chat and tell me which letter they belong to. Nothing has been emailed or scheduled.</p></div>
+      <div class="studio-actions"><button class="primary-button" id="export-drafts">Download my edits ↓</button><label class="secondary-button import-label">Import saved edits<input type="file" id="import-drafts" accept="application/json,.json"></label><button class="text-button" id="studio-close">Preview without editing tools</button></div>
+    </section>
+    <section class="letters-section" id="letters" aria-labelledby="letters-title">
+      <div class="section-heading"><div><p class="eyebrow">A LITTLE LOVE, FOR EVERY KIND OF DAY</p><h2 id="letters-title">Open when<span class="heading-dots">…</span></h2></div><p>Pick a feeling.<br>There’s a letter waiting.</p></div>
+      <div class="filter-row" role="group" aria-label="Filter letters"><button class="filter active" data-filter="all" aria-pressed="true">All the letters <span>15</span></button><button class="filter" data-filter="comfort" aria-pressed="false">A little comfort</button><button class="filter" data-filter="us" aria-pressed="false">A little us</button><button class="filter" data-filter="smile" aria-pressed="false">A little smile</button><span id="opened-count" class="opened-count" aria-live="polite"></span></div>
+      <div class="envelope-grid" id="envelope-grid"></div>
+      <p id="filter-status" class="sr-only" role="status"></p>
+    </section>
+    <section class="closing-note"><div class="closing-mark">♡</div><p class="eyebrow">UNTIL THE DISTANCE IS JUST A STORY</p><h2>A little screen.<br><em>A lot of love.</em></h2><p>Come back whenever you need to.<br>These words aren’t going anywhere.</p><button class="text-button" id="final-letter">One more thing, Shreya <span>↗</span></button></section>
+  </main>
+  <footer><span>For Shreya, with love.</span><span class="footer-heart" aria-hidden="true">♥</span><span>20 October 2026</span></footer>
+  <dialog id="letter-dialog" aria-labelledby="dialog-title">
+    <button class="close-dialog" id="close-dialog" aria-label="Close letter">×</button>
+    <article class="letter-paper"><p id="dialog-number" class="eyebrow"></p><p class="dialog-prefix handwritten">Open when…</p><h2 id="dialog-title"></h2><div class="letter-divider">♡</div><p class="salutation">My Shreya,</p><div class="letter-body" id="letter-body"></div><p class="handwritten letter-signature">All my love,<br>Dhruv</p><div class="personalise-hint" id="personalise-hint" hidden></div>
+      <form id="letter-editor" hidden><label for="edit-body">Your letter</label><textarea id="edit-body" rows="10" maxlength="12000"></textarea><p class="editor-help">A blank line creates a new paragraph. Saved on this browser only until republished.</p><div class="editor-actions"><button class="primary-button" type="submit">Save my words</button><button class="text-button" type="button" id="cancel-edit">Cancel</button></div></form>
+      <div class="letter-toolbar"><button class="text-button" id="edit-letter" hidden>Edit this letter ↗</button><button class="text-button" id="close-letter-bottom">Back to your letters ↩</button></div>
+      <p class="dialog-status" id="dialog-status" role="status" hidden></p>
+    </article>
+  </dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <noscript><p class="noscript">Please enable JavaScript to open your letters.</p></noscript>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

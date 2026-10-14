@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" width="1600" height="520">
+  <defs>
+    <linearGradient id="sage" x2="1" y2="1"><stop stop-color="#253a30"/><stop offset="1" stop-color="#53634d"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="2" dy="12" stdDeviation="12" flood-color="#14241b" flood-opacity=".25"/></filter>
+    <pattern id="grain" width="90" height="90" patternUnits="userSpaceOnUse"><circle cx="18" cy="26" r="1" fill="#d7dbce" opacity=".16"/><circle cx="75" cy="64" r="1.2" fill="#d7dbce" opacity=".11"/></pattern>
+  </defs>
+  <rect width="1600" height="520" fill="url(#sage)"/>
+  <rect width="1600" height="520" fill="url(#grain)"/>
+  <path d="M0 390 C320 320 500 540 810 476 S1360 396 1600 475" fill="none" stroke="#91a58c" stroke-width="1" opacity=".23"/>
+  <path d="M0 420 C300 350 580 530 835 496 S1340 432 1600 500" fill="none" stroke="#91a58c" stroke-width="1" opacity=".18"/>
+  <g transform="translate(1264 261) rotate(-8)" filter="url(#shadow)">
+    <rect x="-208" y="-87" width="416" height="250" rx="2" fill="#e8e4d6"/>
+    <rect x="-176" y="-137" width="352" height="235" fill="#fffdf4" stroke="#e1ded0"/>
+    <path d="M-143 -51 H113 M-143 -28 H113 M-143 -5 H88" fill="none" stroke="#d9d8c9" stroke-width="2"/>
+    <path d="M-208 -87 L0 52 208 -87" fill="#e5e0ce" stroke="#d8d2c0" stroke-width="2"/>
+    <path d="M-208 -87 L0 64 -208 163 Z" fill="#e4dfcd"/>
+    <path d="M208 -87 L0 64 208 163 Z" fill="#e9e3d1"/>
+    <path d="M-208 163 L0 30 208 163 Z" fill="#eee8d6"/>
+    <circle cx="0" cy="47" r="29" fill="#984c3f" stroke="#b07862" stroke-width="3"/>
+    <path d="M0 57 C-6 51 -15 46 -15 38 C-15 30 -5 28 0 36 C5 28 15 30 15 38 C15 46 6 51 0 57Z" fill="none" stroke="#ebc8b2" stroke-width="2"/>
+  </g>
+  <circle cx="101" cy="99" r="35" fill="none" stroke="#d9dfd1" stroke-opacity=".38" stroke-width="1"/>
+  <path d="M85 98 C92 85 105 110 117 92" fill="none" stroke="#d9dfd1" stroke-opacity=".55" stroke-width="2"/>
+</svg>

@@ -48,9 +48,10 @@ for (const text of [
   'One of the days I wish I could live again.',
   'One of those days I wish never ended. I miss you',
   'My passenger princess, making the car rides my favourite part.',
-  'To my weird birb lady. <em>All my love, always.</em>',
-  'For my weird birb lady'
+  'For my Shreya. <em>All my love, always.</em>',
+  'For my Shreya'
 ]) assert.ok(html.includes(text), `Preserved page text: ${text}`);
+assert.ok(!new RegExp(['weird', 'birb', 'lady'].join(' '), 'i').test(html), 'Private nickname stays out of the website');
 
 assert.equal((html.match(/<h1\b/g) || []).length, 1);
 assert.ok(!/PRIVATE DRAFT|Personalise|writing desk/i.test(html), 'No authoring controls in recipient site');

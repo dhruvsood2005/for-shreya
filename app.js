@@ -45,7 +45,7 @@ function renderLetters() {
 function openLetter(letter, index, trigger) {
   lastTrigger = trigger;
   dialogTitle.textContent = `Open when ${letter.title}`;
-  dialogNumber.textContent = `LETTER ${String(index + 1).padStart(2, '0')} OF 15 · FOR SHREYA`;
+  dialogNumber.textContent = `LETTER ${String(index + 1).padStart(2, '0')} OF 15 · FOR MY WEIRD BIRB LADY`;
   dialogImage.src = `./media/${letter.photo}`;
   dialogImage.alt = `A memory for “Open when ${letter.title}”`;
   letterBody.replaceChildren(...letter.body.split(/\n\s*\n/).map(paragraph));

@@ -47,7 +47,8 @@ for (const text of [
   'One of the days I wish I could live again.',
   'One of those days I wish never ended. I miss you',
   'My passenger princess, making the car rides my favourite part.',
-  'A little screen. <em>A lot of love.</em>'
+  'One weird birb lady. <em>All my love, always.</em>',
+  'For my weird birb lady'
 ]) assert.ok(html.includes(text), `Preserved page text: ${text}`);
 
 assert.equal((html.match(/<h1\b/g) || []).length, 1);

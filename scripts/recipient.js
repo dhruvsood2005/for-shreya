@@ -49,7 +49,7 @@ function openLetter(letter, trigger) {
   selected = letter;
   lastTrigger = trigger;
   $('#dialog-title').textContent = letter.title;
-  $('#dialog-number').textContent = `LETTER ${String(letters.indexOf(letter) + 1).padStart(2,'0')} OF 15 · FOR SHREYA`;
+  $('#dialog-number').textContent = `LETTER ${String(letters.indexOf(letter) + 1).padStart(2,'0')} OF 15 · FOR MY WEIRD BIRB LADY`;
   const body = $('#letter-body');
   body.replaceChildren(...letter.body.split(/\n\s*\n/).map(paragraph => make('p','',paragraph)));
   // Media is optional, so no empty placeholders appear before photos are supplied.

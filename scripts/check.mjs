@@ -47,7 +47,7 @@ for (const text of [
   'One of the days I wish I could live again.',
   'One of those days I wish never ended. I miss you',
   'My passenger princess, making the car rides my favourite part.',
-  'One weird birb lady. <em>All my love, always.</em>',
+  'To my weird birb lady. <em>All my love, always.</em>',
   'For my weird birb lady'
 ]) assert.ok(html.includes(text), `Preserved page text: ${text}`);
 

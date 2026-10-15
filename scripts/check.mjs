@@ -37,8 +37,13 @@ for (const id of ['letter-dialog', 'letter-grid', 'dialog-image', 'letter-body',
   assert.ok(html.includes(`id="${id}"`), id);
 }
 for (const text of [
-  'Happy 21st birthday, Shreya. ♡',
-  'Sydney and San Diego have kept us apart for a long time, but on 8 January I finally get to see you in Japan.',
+  '20 OCTOBER · FOR MY FAVOURITE WEIRDO',
+  'Until I can <em>hold you again</em>',
+  'Happy 21st birthday, my love. ♡',
+  'I wish I could be beside you today—annoying you, making you roll your eyes, and pulling you into the longest hug.',
+  'On 8 January, you won’t be a face on my screen anymore.',
+  'Always yours, Dhruv',
+  'One of the days I wish I could live again.',
   'One of those days I wish never ended. I miss you',
   'My passenger princess, making the car rides my favourite part.',
   'A little screen. <em>A lot of love.</em>'

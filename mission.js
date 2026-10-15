@@ -1,6 +1,20 @@
 const form = document.querySelector('#mission-form');
 const counter = document.querySelector('#counter');
 const success = document.querySelector('#success');
+const completionKey = 'shreya-birthday-mission-complete';
+
+const showSuccess = ({ remember = false } = {}) => {
+  if (remember) {
+    try { localStorage.setItem(completionKey, 'true'); } catch { /* The reveal still works when storage is unavailable. */ }
+  }
+  counter.textContent = '3 / 3';
+  form.hidden = true;
+  success.hidden = false;
+};
+
+try {
+  if (localStorage.getItem(completionKey) === 'true') showSuccess();
+} catch { /* A private browser can still complete the mission normally. */ }
 
 const normalize = value => value
   .toLowerCase()
@@ -57,8 +71,7 @@ form.addEventListener('submit', event => {
   counter.textContent = `${correct} / 3`;
 
   if (correct === 3) {
-    form.hidden = true;
-    success.hidden = false;
+    showSuccess({ remember: true });
     success.scrollIntoView({ behavior: 'smooth', block: 'center' });
     success.querySelector('a').focus({ preventScroll: true });
   } else {

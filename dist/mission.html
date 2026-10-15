@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4eee6">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="A tiny birthday mission for Shreya.">
+  <title>A Little Birthday Mission · For Shreya</title>
+  <link rel="icon" href="./heart.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./mission.css">
+</head>
+<body>
+  <main class="mission-shell">
+    <section class="memory-panel" aria-label="A memory from Dhruv and Shreya">
+      <div class="memory-copy">
+        <p class="eyebrow">FOR MY WEIRD TURMERIC EATER</p>
+        <p class="memory-line">Three little memories are standing between you and your present.</p>
+      </div>
+      <figure>
+        <img src="./media/IMG_8433.jpg" alt="Shreya in the passenger seat">
+        <figcaption>Passenger princess duties ♡</figcaption>
+      </figure>
+      <span class="scribble" aria-hidden="true">you’ve got this, weirdo</span>
+    </section>
+
+    <section class="game-panel" aria-labelledby="mission-title">
+      <header class="mission-header">
+        <span class="wordmark"><span>For</span> Shreya ♡</span>
+        <span class="counter" id="counter">0 / 3</span>
+      </header>
+
+      <div class="game-copy">
+        <p class="eyebrow">BIRTHDAY MISSION · THREE CLUES</p>
+        <h1 id="mission-title">Prove you’re my <em>favourite weirdo.</em></h1>
+        <p class="intro">Your real present is locked behind three memories that only you should know.</p>
+
+        <form id="mission-form" novalidate>
+          <div class="question" data-question="toe">
+            <label for="toe-answer"><span>01</span> What did you once react to like you had discovered a giant insect in the sand at The Entrance?</label>
+            <input id="toe-answer" name="toe" autocomplete="off" placeholder="Your answer" required>
+            <p class="feedback" aria-live="polite"></p>
+          </div>
+
+          <div class="question" data-question="passenger">
+            <label for="passenger-answer"><span>02</span> Who permanently owns the passenger seat?</label>
+            <input id="passenger-answer" name="passenger" autocomplete="off" placeholder="Your answer" required>
+            <p class="feedback" aria-live="polite"></p>
+          </div>
+
+          <div class="question" data-question="japan">
+            <label for="japan-answer"><span>03</span> Where will we finally see each other again?</label>
+            <input id="japan-answer" name="japan" autocomplete="off" placeholder="Your answer" required>
+            <p class="feedback" aria-live="polite"></p>
+          </div>
+
+          <button type="submit">Check my answers <span aria-hidden="true">→</span></button>
+        </form>
+
+        <section class="success" id="success" hidden aria-live="polite">
+          <span class="success-heart" aria-hidden="true">♡</span>
+          <p class="eyebrow">MISSION COMPLETE</p>
+          <h2>You passed, weirdo.</h2>
+          <p>I knew my nine year old could do it. Your real present is waiting for you.</p>
+          <a href="./index.html">Open your birthday present <span aria-hidden="true">↗</span></a>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./mission.js?v=20261015"></script>
+</body>
+</html>

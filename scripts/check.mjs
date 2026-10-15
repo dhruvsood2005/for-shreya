@@ -33,6 +33,7 @@ for (const letter of letters) {
 }
 
 const html = await readFile(new URL('../dist/index.html', import.meta.url), 'utf8');
+const missionHtml = await readFile(new URL('../dist/mission.html', import.meta.url), 'utf8');
 for (const id of ['letter-dialog', 'letter-grid', 'dialog-image', 'letter-body', 'audio-wrap']) {
   assert.ok(html.includes(`id="${id}"`), id);
 }
@@ -54,12 +55,21 @@ for (const text of [
 assert.equal((html.match(/<h1\b/g) || []).length, 1);
 assert.ok(!/PRIVATE DRAFT|Personalise|writing desk/i.test(html), 'No authoring controls in recipient site');
 
-for (const filename of ['dist/app.js', 'dist/letters.js']) {
+for (const text of [
+  'What did you once react to like you had discovered a giant insect in the sand at The Entrance?',
+  'Who permanently owns the passenger seat?',
+  'Where will we finally see each other again?',
+  'You passed, weirdo.',
+  'I knew my nine year old could do it.'
+]) assert.ok(missionHtml.includes(text), `Mission copy: ${text}`);
+assert.ok(!missionHtml.includes('8 January'), 'Mission question does not reveal the date');
+
+for (const filename of ['dist/app.js', 'dist/letters.js', 'dist/mission.js']) {
   const result = spawnSync(process.execPath, ['--check', filename], { encoding: 'utf8' });
   assert.equal(result.status, 0, result.stderr);
 }
 
-for (const file of ['style.css', 'app.js', 'letters.js', 'heart.svg', 'media/birthday-message.m4a']) {
+for (const file of ['style.css', 'app.js', 'letters.js', 'mission.html', 'mission.css', 'mission.js', 'heart.svg', 'media/birthday-message.m4a']) {
   await access(new URL(`../dist/${file}`, import.meta.url));
 }
 const audio = await stat(new URL('../dist/media/birthday-message.m4a', import.meta.url));

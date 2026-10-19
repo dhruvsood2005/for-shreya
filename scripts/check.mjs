@@ -45,8 +45,8 @@ for (const text of [
   'Since San Diego put an ocean between us,',
   'On 8 January, you won’t be a face on my screen anymore.',
   'Always yours, Dhruv',
-  'One of the days I wish I could live again.',
-  'One of those days I wish never ended. I miss you',
+  'me and my baby on a cliff. I wanna kiss your hair',
+  'one of our last days together and the day i wish never ended',
   'My passenger princess, making the car rides my favourite part.',
   'For my Shreya. <em>All my love, always.</em>',
   'For my Shreya'
